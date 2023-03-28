@@ -1,0 +1,17 @@
+<p>sample works!</p>
+
+
+<div>
+    <form>
+        Enter the first Number:
+        <input type="number" required name="first" [(ngModel)]="a"/>
+        Enter the second Number:
+        <input type="number" required name="Second"[(ngModel)]="b"/>
+        <input type="submit" value="multiply" (click)="multiply()"/>
+  
+    </form>
+</div>
+<input type="text" [(ngModel)]="student"/>
+{{student}}  
+<h4 *ngIf="flag">the result is {{c}}</h4><!--ngif is the "structural directive", this only comes into play regarding the struvture of the page-->
+<img [src]="photo" />

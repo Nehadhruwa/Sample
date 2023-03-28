@@ -1,0 +1,51 @@
+<div>
+    <form #Addform="ngForm" (submit)="AddNew()">
+        <div>
+            Employee ID:
+            <input type="text" name="eid" [(ngModel)]="e.Eid" required=""/>
+            <br>
+        </div>
+        <div>
+            Employee Name:
+            <input type="text" name="Ename" [(ngModel)]="e.Ename" required=""/>
+            <br>
+        </div>
+        <div>
+            Employee Salary:
+            <input type="number" name="Salary" [(ngModel)]="e.Salary" required=""/>
+            <br>
+        </div>
+        <div>
+            Employee Date of Joining:
+            <input type="date" name="Date" [(ngModel)]="e.DOj" required=""/>
+            <br>
+        </div>
+        <div>
+            Employee Department:
+            <select name="Dept" id="Dept" [(ngModel)]="deptID">
+                <option value="1">CSE</option>
+                <option value="2">ECE</option>
+                <option value="3">CSE</option>
+                <option value="4">IT</option>
+            </select>
+        </div>
+        <div>
+            Skills:
+            <select name="Dept" id="Dept" [(ngModel)]="SkillIDs" multiple>
+                <option value="1">Java</option>
+                <option value="2">Python</option>
+                <option value="3">C++</option>
+                <option value="4">C</option>
+            </select>
+        </div>
+            
+
+            <br>
+            No of skills:
+            
+            
+            <input type="submit" value="Register" [disabled]="!Addform.valid"/>
+
+        
+    </form>
+</div>>

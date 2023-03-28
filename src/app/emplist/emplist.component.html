@@ -1,0 +1,17 @@
+<p>emplist works!</p>
+{{e.DOj|date}}
+{{e.Eid}}
+{{e.Ename}}
+{{e.Salary}}
+
+<table border="2">
+    <div *ngFor="let i of emp">
+        <tr *ngFor="let e of i|keyvalue" style="display:inline">
+            <th>{{e.key}}</th>
+            <td>{{e.value}}</td>
+            
+        </tr>
+    </div>
+    <input type="submit" value="Add" (click)="AddNew()"/>
+
+</table>
